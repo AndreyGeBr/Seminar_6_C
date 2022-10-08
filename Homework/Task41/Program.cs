@@ -15,5 +15,16 @@ for (int i = 0; i < array.Length; i++)
         counter++;
     }
 }
- 
-Console.WriteLine($"Вы ввели {counter} чисел больше нуля");
+
+if (counter == 1)
+{
+    Console.WriteLine($"Вы ввели {counter} число больше нуля");
+} 
+else if (counter == 2 || counter == 3 || counter == 4)
+{
+    Console.WriteLine($"Вы ввели {counter} числа больше нуля");
+}
+else
+{
+    Console.WriteLine($"Вы ввели {counter} чисел больше нуля");
+}
